@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Sin título 1</title>
+</head>
+
+<body>
+
+<form action="control_form.php" method="get">
+ Escriba su nombre y apellidos<input type="text" name="nombre" />
+ <br>
+ Intro la clave <input type="password" name="nombre" />
+ <br>
+</form>
+
+Reset <input type="reset" value="Reinicio" />
+<br><br><br><br><br>
+<hr>
+<form action="control_form.php" method="get">
+ <p>Sexo:</p>
+ <input type="radio" name="sexo" value="hombre"/>Hombre<br />
+ <input type="radio" name="sexo" value="mujer" checked="checked"/>Mujer<br />
+</form>
+
+<br><br><br><br><br>
+<hr>
+<form action="control_form.php" method="get">
+ <p>Sexo:</p>
+ <input type="checkbox" name="sexo" value="hombre"/>Hombre<br />
+ <input type="checkbox" name="sexo" value="mujer" checked="checked"/>Mujer<br />
+ Estado civil: Casado <input type="checkbox" name="estadocivil"
+value="casado" checked="checked"/>
+</form>
+<br><br><br><br><br>
+<hr>
+<form action="control_form.php" method="get">
+ <p>Sexo:</p>
+ <input type="checkbox" name="sexo" value="hombre"/>Hombre<br />
+ <input type="checkbox" name="sexo" value="mujer"checked="checked"/>Mujer<br />
+ Estado civil: Casado <input type="checkbox" name="estadocivil"
+value="casado" checked="checked"/>
+<br />
+<input type="submit" value="Enviar" />
+</form>
+
+<br><br><br><br><br>
+<hr>
+
+
+<form action="control_form.php" method="get">
+ <select name="provincia">
+ <option value="av">Ávila</option>
+ <option value="bu">Burgos</option>
+ <option value="l">León</option>
+ <option value="p">Palencia</option>
+ <option value="sg">Segovia</option>
+ <option value="so">Soria</option>
+ <option value="sa">Salamanza</option>
+ <option value="va">Valladolid</option>
+ <option value="za">Zamora</option>
+ </select>
+ <input type="submit" value="enviar"/>
+</form>
+
+
+<br><br><br><br><br>
+<hr>
+
+
+
+<form action="control_form.php" method="get">
+ <select name="ciudad">
+ <optgroup label="Cantabria">
+ <option value="s">Santander</option>
+ </optgroup>
+ <optgroup label="Castilla y León">
+ <option value="av">Ávila</option>
+ <option value="bu">Burgos</option>
+ <option value="l">León</option>
+ <option value="p">Palencia</option>
+ <option value="sg">Segovia</option>
+ <option value="so">Soria</option>
+ <option value="sa">Salamanza</option>
+ <option value="va">Valladolid</option>
+ <option value="za">Zamora</option>
+ </optgroup>
+ </select>
+ <input type="submit" value="enviar"/>
+</form>
+
+<br><br><br><br><br>
+<hr>
+<form action="recogida1.php" method="get">
+ Elija el archivo
+ <input type="file" name="archivo" />
+ <input type="submit" value="enviar"/><br />
+</form>
+
+<br><br><br><br><br>
+<hr>
+<form action="control_form.php" method="get">
+ Escribe un texto descriptivo: <br />
+ <textarea rows="10" cols="40" name="texto"></textarea><br />
+ <input type="submit" value="enviar"/><br />
+</form>
+
+<br><br><br><br><br>
+<hr>
+
+
+<form action="control_form.php" method="get">
+ <fieldset >
+ <legend>Datos personales</legend>
+ <input type="radio" name="sexo" value="hombre"/>Hombre<br />
+ <input type="radio" name="sexo" value="mujer"
+checked="checked"/>Mujer<br />
+ Estado civil: Casado <input type="checkbox" name="estadocivil"
+value="casado" checked="checked"/>
+ <br />
+ </fieldset>
+ <input type="submit" value="Enviar" />
+</form>
+
+<br><br><br><br><br>
+<hr>
+<form action="control_form.php" method="get">
+ <label for="texto">Escribe un texto descriptivo:</label>
+ <textarea rows="10" cols="40" name="texto" ></textarea><br />
+ <input type="submit" value="enviar"/><br />
+</form>
+
+<br><br><br><br><br>
+<hr>
+
+<form action="recogida.php" method="get">
+ <label for="gustos">
+ Escribe en qué te gusta pasar tu tiempo de ocio
+ </label>
+ <input type="text" id="gustos" name="gustos" list="listaGustos" />
+ <datalist id="listaGustos">
+ <option label="deportes" value="Deportes" />
+ <option label="teatro" value="Teatro" />
+ <option label="cine" value="Cine" />
+ <option label="leer" value="Leer" />
+ </datalist>
+ <input type="submit" value="enviar"/><br />
+</form>
+
+
+<form action="recogida.php" method="get">
+ <label for="gustos">
+ Escribe en qué te gusta pasar tu tiempo de ocio
+ </label>
+ <datalist id="listaGustos">
+ <select name="listaGustos">
+ <option value="deportes" >Deportes</option>
+ <option value="teatro" >Teatro</option>
+ <option value="cine" >Cine</option>
+ <option value="leer" >Leer</option>
+</select>
+</datalist>
+
+<input id="gustos" name="gustos" list="listaGustos" />
+ <input type="submit" value="enviar"/><br />
+</form>
+<br><br><br><br><br>
+<hr>
+
+
+<form action="recogida1.php" method="get">
+ <label for="texto">
+ Escribe el nº de serie (5 letras y tres números)
+ </label>
+ <input type="text" pattern="[A-Z]{5}[0-9]{3}" id="gustos" name="texto"
+/>
+ <input type="submit" value="enviar"/><br />
+</form>
+<br><br><br><br><br>
+<hr>
+
+
+<form action="control_form.php" method="get">
+ <label for="texto">Email:</label>
+ <textarea rows="10" cols="40" name="texto" ></textarea><br />
+ <input type="email" value="email"/><br />
+</form>
+<br><br><br><br><br>
+<hr>
+
+
+<form action="control_form.php" method="get">
+ <label for="Fecha">Email:</label>
+ <textarea rows="10" cols="40" name="texto" ></textarea><br />
+ <input type="date" value="fecha nacimiento"/><br />
+</form>
+
+
+</body>
+</html>
